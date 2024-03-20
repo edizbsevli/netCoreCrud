@@ -1,0 +1,35 @@
+﻿@model Deneme.Models.UpdateEmployeeViewModel
+
+@{
+
+}
+
+<h1>Oyunlar</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ad</label>
+        <input type="text" class="form-control" asp-for="Name" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Aldığın Fiyat</label>
+        <input type="number" class="form-control" asp-for="Salary" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Günü</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Departman</label>
+        <input type="text" class="form-control" asp-for="Department" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+    <button type="submit" class="btn btn-danger"
+    asp-action="Delete"
+    asp-controller="Employees">Sil</button>
+</form>
